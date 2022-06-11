@@ -44,7 +44,7 @@ namespace CarvedRock.Api.Domain
         {
             return new List<Product>
             {
-                new Product { Id = 1, Name = "Trailblazer", Category = "boots", Price = 69.99,
+                new Product { Id = 11, Name = "Trailblazer", Category = "boots", Price = 69.99,
                     Description = "Great support in this high-top to take you to great heights and trails." },
                 new Product { Id = 2, Name = "Coastliner", Category = "boots", Price = 49.99,
                     Description = "Easy in and out with this lightweight but rugged shoe with great ventilation to get your around shores, beaches, and boats." },

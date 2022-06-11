@@ -1,0 +1,22 @@
+﻿version: '3.4'
+
+services:
+  carvedrock.api:
+    image: carved-rock-api
+    build:
+      context: .
+      dockerfile: CarvedRock.Api/Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      - SimpleProperty="hello-from-compose"
+    depends_on: 
+      - seq
+  
+  seq:
+    image: datalust/seq
+    ports:
+      - "8005:80"
+    environment:
+      - ACCEPT_EULA=Y
