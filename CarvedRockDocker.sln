@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarvedRock.OrderProcessor", "CarvedRock.OrderProcessor\CarvedRock.OrderProcessor.csproj", "{50985A06-A3D8-4297-BF5B-10017C9BA556}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.OrderProcessor", "CarvedRock.OrderProcessor\CarvedRock.OrderProcessor.csproj", "{50985A06-A3D8-4297-BF5B-10017C9BA556}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarvedRock.InvoiceGenerator", "CarvedRock.InvoiceGenerator\CarvedRock.InvoiceGenerator.csproj", "{2D2A9B4A-B439-4DD8-9E84-4A6D917F8B08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.InvoiceGenerator", "CarvedRock.InvoiceGenerator\CarvedRock.InvoiceGenerator.csproj", "{2D2A9B4A-B439-4DD8-9E84-4A6D917F8B08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarvedRock.Api", "CarvedRock.Api\CarvedRock.Api.csproj", "{96D5A87B-61BC-4567-82D9-98FFA6DEB0AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.Api", "CarvedRock.Api\CarvedRock.Api.csproj", "{96D5A87B-61BC-4567-82D9-98FFA6DEB0AF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{5EA491C7-6DF0-4D6B-B1B8-1D2C4BE36D37}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.yaml = docker-compose.yaml
-	EndProjectSection
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1434F60E-E993-437A-B6F8-674EB3DBE72E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,5 +29,15 @@ Global
 		{96D5A87B-61BC-4567-82D9-98FFA6DEB0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96D5A87B-61BC-4567-82D9-98FFA6DEB0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96D5A87B-61BC-4567-82D9-98FFA6DEB0AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1434F60E-E993-437A-B6F8-674EB3DBE72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1434F60E-E993-437A-B6F8-674EB3DBE72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1434F60E-E993-437A-B6F8-674EB3DBE72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1434F60E-E993-437A-B6F8-674EB3DBE72E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E38BCF3-E51A-434D-B021-70A6A46D64A7}
 	EndGlobalSection
 EndGlobal
