@@ -12,9 +12,16 @@ services:
       - SimpleProperty="hello-from-compose"
     depends_on:
       - seq
+      - rabbit_in_dc
       - sql_in_dc
         
 
+  rabbit_in_dc:
+    image: rabbitmq:3-management
+    ports:
+      - "8088:15672"
+    environment:
+      - ACCEPT_EULA=Y
   
   sql_in_dc:
     build:
