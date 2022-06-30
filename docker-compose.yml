@@ -15,6 +15,14 @@ services:
       - rabbit_in_dc
       - sql_in_dc
         
+  carvedrock.app:
+    build:
+      context: .
+      dockerfile: CarvedRock.App/Dockerfile
+    ports:
+      - "8081:80"
+    depends_on:
+      - seq
 
   rabbit_in_dc:
     image: rabbitmq:3-management
