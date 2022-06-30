@@ -11,8 +11,22 @@ services:
     environment:
       - DOTNET_ENVIRONMENT=Development
       - SimpleProperty="hello-from-compose"
-    depends_on: 
+    depends_on:
       - seq
+      - sql_in_dc
+        
+
+  
+  sql_in_dc:
+    build:
+      context: .
+      dockerfile: sql/sql.Dockerfile
+    restart: always
+    ports:
+      - "1440:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Sqlc0ntainersFTW!
   
   seq:
     image: datalust/seq
