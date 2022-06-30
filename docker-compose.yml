@@ -2,7 +2,6 @@ version: '3.4'
 
 services:
   carvedrock.api:
-    image: carved-rock-api
     build:
       context: .
       dockerfile: CarvedRock.Api/Dockerfile
